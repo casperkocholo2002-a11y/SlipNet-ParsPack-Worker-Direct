@@ -4,9 +4,9 @@ const http = require('http');
 const { WebSocket, WebSocketServer, createWebSocketStream } = require('ws');
 
 const PORT = Number(process.env.PORT || 3000);
-const PUBLIC_RELAY_PATH = String(process.env.PUBLIC_RELAY_PATH || '').trim();
-const WORKER_HOST = String(process.env.WORKER_HOST || '').trim();
-const WORKER_PATH = String(process.env.WORKER_PATH || '').trim();
+const PUBLIC_RELAY_PATH = String(process.env.PUBLIC_RELAY_PATH || '/pd/62ad74fca82c63c4643acd61ce16d0348fc7c2e7c076b6e5').trim();
+const WORKER_HOST = String(process.env.WORKER_HOST || 'ppw-3c19aa324d48.edgecache-628bbe41dc.workers.dev').trim();
+const WORKER_PATH = String(process.env.WORKER_PATH || '/w/986b32e37335922c2faab7ce2153a8c9f9c6aff9de334f28').trim();
 const MAX_WS = 1024 * 1024;
 
 const ready = () => Boolean(
