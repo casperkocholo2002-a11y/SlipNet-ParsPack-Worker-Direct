@@ -1,0 +1,7 @@
+name = "replace-me"
+main = "worker.js"
+compatibility_date = "2026-10-23"
+
+[vars]
+PUBLIC_PATH = "/replace-with-worker-path"
+VLESS_UUIDS = "replace-at-deploy-time"
